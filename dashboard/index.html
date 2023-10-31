@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>dashboard</title>
+</head>
+<body class="body">
+
+    <section class="main">
+        <div class="sidebar">
+            <ul class="sidebar--items">
+                <li>
+                    <i class="ri-menu-line menu"></i>
+                    <H1>CAMP</H1>
+                        <H7>AUTTO</H7>
+                        </li>
+                     <LI>
+                    <a href="#" class="active">
+                        <span class="icon"><i class="ri-dashboard-line"></i></span>
+                        <div class="sidebar--item">Overview</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="ri-user-line"></i></span>
+                        <div class="sidebar--item">Audiance</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="ri-booklet-line"></i></span>
+                        <div class="sidebar--item">Contact</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="ri-wallet-line"></i></span>
+                        <div class="sidebar--item">Analytic</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="ri-bar-chart-line"></i></span>
+                        <div class="sidebar--item">channel</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="ri-edit-line"></i></span>
+                        <div class="sidebar--item">campaign</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="ri-user-line"></i></span>
+                        <div class="sidebar--item">Lead Profiling</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="ri-booklet-line"></i></span>
+                        <div class="sidebar--item">Socil media</div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="sidebar--bottom--items">
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="ri-settings-3-line"></i></span>
+                        <div class="sidebar--item">Settings</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="ri-question-line"></i></span>
+                        <div class="sidebar--item">Help</div>
+                    </a>
+                </li>
+              
+            </ul>
+        </div>
+        <div class="main--container">
+            <div class="section--title"><h3>Dashboard</h3>
+                      <input type="text" placeholder="Search" class="searchInput" id="input"/>
+                
+            </div>
+            <div class="section--title">
+                <h3 class="title">Hallo ,komal jain</h3>
+            </div>
+            <div class="cards">
+                <div class="card card-1">
+                    <div class="card--title">
+                        <span class="card--icon icon"><i class="ri-bar-chart-line"></i></span>
+                        <span>project</span>
+                    </div>
+                    <h3 class="card--value">2.2k <i class="ri-arrow-up-circle-fill up"></i></h3>
+                    <h5 class="more">+10, 80%</h5>
+                </div>
+                <div class="card card-2">
+                    <div class="card--title">
+                        <span class="card--icon icon"><i class="ri-booklet-line"></i></span>
+                        <span>live</span>
+                    </div>
+                    <h3 class="card--value">10k <i class="ri-arrow-down-circle-fill down"></i></h3>
+                    <h5 class="less">+20, 50%</h5>
+                </div>
+                <div class="card card-3">
+                    <div class="card--title">
+                        <span class="card--icon icon"><i class="ri-edit-line"></i></span>
+                        <span>on going</span>
+                    </div>
+                    <h3 class="card--value">5 <i class="ri-arrow-up-circle-fill up"></i></h3>
+                    <h5 class="more">50%</h5>
+                    
+                    
+                </div>
+                <div class="card card-4">
+                    <div class="card--title">
+                        <span class="card--icon icon"><i class="ri-wallet-line"></i></span>
+                        <span>Created</span>
+                    </div>
+                    <h3 class="card--value">40<i class="ri-arrow-down-circle-fill down"></i></h3>
+                    <h5 class="less">34%</h5>
+                 
+                </div>
+  
+
+                <div class="share">
+                 80%
+                </div>
+   
+              
+            </div>
+            <div class="target-vs-sales--container">
+                <div class="section--title">
+                    <h3 class="title">contant creater</h3>
+                    <div class="sales--value">
+                        <div class="target">
+                            
+                            sort by
+                        </div>
+                        <select name="date" id="date">
+                            <option value="lastmonth">monthly</option>
+                            <option value="lastyear">Last year</option>
+                            <option value="alltime">All time</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="target--vs--sales">
+                    <canvas id="tarsale"></canvas>
+               
+<div class="chart-wrap vertical">
+  
+  
+  <div class="grid">
+      <div class="bar" style="--bar-value:85%;" data-name="jan" title="85%"></div> &nbsp;
+      <div class="bar" style="--bar-value:23%;" data-name="feb" title="23%"></div>&nbsp;
+     <div class="bar" style="--bar-value:7%;" data-name="mar" title=" 7%"></div>&nbsp;
+      <div class="bar" style="--bar-value:38%;" data-name="apr" title=" 38%"></div>&nbsp;
+      <div class="bar" style="--bar-value:35%;" data-name="may" title="35%"></div>&nbsp;
+      <div class="bar" style="--bar-value:30%;" data-name="jun" title="30%"></div>&nbsp;
+      <div class="bar" style="--bar-value:5%;" data-name="july" title="5%"></div>&nbsp;
+      <div class="bar" style="--bar-value:20%;" data-name="aug" title="20%"></div>    
+  </div>
+</div>
+                </div>
+            </div>
+            <div class="table">
+                <div class="section--title">
+                    <h3 class="title">recent active</h3>
+                    <div></div>
+                </div>
+                <table>
+                    <thead>
+                
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>project1</td>
+                            <td><button>completed</button></td>
+                            
+                        </tr>
+                        <tr>
+                          <td>project2</td>
+                          <td><button>on going</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+      
+    </section>
+    <DIV class="style"></DIV>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/sales.js"></script>
+    <script src="assets/js/orders.js"></script>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/customers.js"></script>
+    <script src="assets/js/tarsale.js"></script>
+</body>
+</html>
